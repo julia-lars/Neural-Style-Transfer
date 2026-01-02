@@ -15,8 +15,8 @@ else:
     device = torch.device("cpu")
 print(f"Using device: {device}", flush=True)
 
-content_img = Image.open("data/content-images/c1.jpg")
-style_img   = Image.open("data/style-images/s1.jpg")
+content_img = Image.open("../data/content-images/c1.jpg")
+style_img   = Image.open("../data/style-images/s1.jpg")
 
 h, w = content_img.size[1], content_img.size[0]
 image_shape = (h, w)
